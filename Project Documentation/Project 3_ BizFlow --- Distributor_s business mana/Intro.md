@@ -1,0 +1,1 @@
+- All the project details and flow i have written in the pages of physical copy, will add here soon

@@ -1,0 +1,1 @@
+explain all the features that your app has , like which type of error it can prevent and how robust my code is

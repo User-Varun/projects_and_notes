@@ -1,0 +1,5 @@
+- Function interface is a interface, that has only one method.
+- also known as SAM ( single abstraction method ) interface.
+- @FunctionalInterface
+- we can use the lambda expressions ( the ->) only with functional interface
+- lambda is just syntactic sugar ( all code at compile time are there, it's just that u don't have to write it , making code less verbose)

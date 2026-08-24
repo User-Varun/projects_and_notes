@@ -1,0 +1,9 @@
+- <span style="color: rgb(126, 140, 141);">make an extension that records and lists where u are on content ( like show you timestamp , or page no. , certain page on certain paragraph of a website ) , like for a Youtube video with their link so u can jump back into them  from right there ( also make it encrypted so no one can see your notes , also include cloud syncing  , also create a "about" page that describes what is extension can be used for , it's pros and cons</span>
+- <span style="color: rgb(126, 140, 141);">From Task Manager</span> 
+- - <span style="color: rgb(126, 140, 141);">Connect with mongodb ( API )</span>
+    - <span style="color: rgb(126, 140, 141);">Store Mani and my notes</span>
+    - <span style="color: rgb(126, 140, 141);">Add a tag for name</span>
+    - <span style="color: rgb(126, 140, 141);">Add sort based on name</span>
+    - <span style="color: rgb(126, 140, 141);">Finish features to pin notes</span>
+    - <span style="color: rgb(126, 140, 141);">Feature to edit notes</span>
+    - <span style="color: rgb(126, 140, 141);">Add a drop menu in navbar to sort by</span>

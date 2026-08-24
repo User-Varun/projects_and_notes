@@ -1,0 +1,2 @@
+- Selling point of interfaces over abstract class is that ( we can only extends to one  abstract class , but in the case of interfaces we can implement multiple interface in a class using implements and adding interfaces name by comma)
+- we also create loose coupling ( object is not bound to one type of reference)

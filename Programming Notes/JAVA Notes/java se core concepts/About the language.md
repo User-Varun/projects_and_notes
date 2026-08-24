@@ -1,0 +1,9 @@
+- single level and multiple level inheritance is possible in java
+- Java don't have multiple inheritance
+- Method overloading ( same method name , diff parameters)
+- method overriding ( same method name , same parameters but different operation , mostly used when using multi-level inheritance)
+- we have 4 access modifiers ( public ,private , protected , default)
+    - private :- only the class it's created by can access or change (always make your variables private)
+    - public :- same package can use without public, but for different packages we need to use public inside our methods![654af0a08e075e107d2e63d579eba93e.png](../../../../_resources/654af0a08e075e107d2e63d579eba93e.png)
+- We can't have 2 public class in a file
+- don't keep your variable on default(access modifier) use public , private ,protected

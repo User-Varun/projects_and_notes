@@ -1,0 +1,1 @@
+[07:22:43](https://www.youtube.com/watch?v=BGTx91t8q50&list=PLsyeobzWxl7q6oUFts2erdot6jxF_lisP&index=1&t=26563s) Object Class equals toString hashcode

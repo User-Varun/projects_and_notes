@@ -1,0 +1,5 @@
+- these are keywords available to provide the compiler or the runtime some extra info(metadata)
+- if the intent is not reflected in code, the compiler will show error in editor (so u can fix it)
+- examples are @Override
+- class level :- @Depricated 
+- @retention :-  we can set at what level we our annotation has to take effect compiler lever or runtime as well

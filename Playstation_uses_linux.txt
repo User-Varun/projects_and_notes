@@ -1,0 +1,14 @@
+PlayStation 4 and PlayStation 5
+    • PS4 System Software: The native OS is Orbis OS, a fork of FreeBSD 9.0 (released January 12, 2012).  It is a monolithic BSD kernel written in C and C++. 
+    • PS5 System Software: The PlayStation 5 also uses a custom version of Orbis OS based on FreeBSD (specifically FreeBSD 11 according to community analysis of kernel data).  This OS is optimized for gaming performance, low latency, and media consumption, contrasting with the Windows-based Xbox OS. 
+PlayStation 3
+    • The PlayStation 3 used a proprietary PlayStation 3 System Software based on the Cell Broadband Engine Architecture. While it shares some lineage with Unix-like systems, it is distinct from the FreeBSD-based Orbis OS used in later generations. 
+
+Why Sony Uses FreeBSD
+Sony chose FreeBSD for its PS4 and PS5 because it offers a stable, Unix-like foundation with strong networking capabilities and performance optimization for the console's x86-64 architecture.  This allows for efficient resource management and direct hardware access, which is critical for gaming performance. The PS5's FreeBSD base also facilitates potential community efforts to run Linux distributions (like Ubuntu) via jailbreaking, as seen in recent firmware versions. 
+Key Features of Orbis OS
+    • Custom Graphics APIs: Includes Gnm (low-level) and Gnmx (high-level) for direct GPU control. 
+    • Development Tools: The SDK is based on LLVM and Clang, supporting C++11. 
+    • User Interface: Replaced the XrossMediaBar (XMB) with the PlayStation Dynamic Menu for a more fluid experience.
+    • Closed Source: Unlike standard FreeBSD, Sony’s Orbis OS is proprietary and closed-source. 
+

@@ -1,0 +1,3 @@
+- variable :- it behaves like const in JavaScript ( can't change the Val )
+- class :- no other class can inherit you now ( saktimaan..)
+- method :- no other class that inherits your class can override you( the method )

@@ -1,0 +1,1 @@
+build projects and implement these features into them to learn , don't need to memorize , just come back to corse and then review lectures, notes ,documentationn and then try again
