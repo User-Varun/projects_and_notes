@@ -1,0 +1,1 @@
+1. using @Component , @ComponentScan , @Autowired , we can setup dependcy injection (telling spring to inject object where it is told to) 
