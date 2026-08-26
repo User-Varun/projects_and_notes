@@ -1,9 +1,12 @@
 package com.example.taskManagement.Service;
 
+import com.example.taskManagement.Dto.UserDto;
+import com.example.taskManagement.InvalidUserException;
 import com.example.taskManagement.Model.User;
 import com.example.taskManagement.Repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @Service
@@ -16,15 +19,21 @@ public class UserService {
         this.ur = ur;
     }
 
-    public User save(User u){
-        return ur.save(u);
+    public User save(UserDto u) {
+
+        if(u == null) throw new InvalidUserException("User cannot be Null");
+
+        User user = new User();
+        user.setName(u.getName());
+
+        return ur.save(user);
     };
 
-    public User getUser(int id){
-        return ur.getUser(id);
+    public User getUser(long id){
+        return ur.getReferenceById(id);
     }
 
     public List<User> getAllUsers(){
-        return ur.getUsers();
+        return ur.findAll();
     }
 }

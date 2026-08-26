@@ -1,9 +1,14 @@
 package com.example.taskManagement.Model;
 
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "tasks")
 public class Task {
 
-    private  int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  long id;
     private  String title;
     private  String description;
     private int projectId;
@@ -11,20 +16,12 @@ public class Task {
 
     public Task(){}
 
-    public Task(String t , String d , int projectId , int userId){
-
-        this.title = t;
-        this.description = d;
-        this.userId = userId;
-        this.projectId = projectId;
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {
         return description;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
     public int getProjectId() {
@@ -35,9 +32,15 @@ public class Task {
         return userId;
     }
 
-    public int getId(){
-        return id;
-    }
+    public Task(String t , String d , int projectId , int userId){
 
+        this.title = t;
+        this.description = d;
+        this.userId = userId;
+        this.projectId = projectId;
+    }
+public long getId(){
+        return id;
+}
 
 }

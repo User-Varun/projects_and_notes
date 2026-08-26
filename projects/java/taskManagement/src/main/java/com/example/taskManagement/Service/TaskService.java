@@ -2,6 +2,7 @@ package com.example.taskManagement.Service;
 
 import com.example.taskManagement.Model.Task;
 import com.example.taskManagement.Repository.TaskRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,15 +17,18 @@ public class TaskService {
         this.tr = tr;
     }
 
+    @Transactional
     public Task save(Task t){
-       return tr.createTask(t);
+       return tr.save(t);
     }
 
-    public Task getTask(int id){
-        return tr.getTask(id);
+    @Transactional
+    public Task getTask(long id){
+        return tr.getReferenceById(id);
     }
 
+    @Transactional
     public List<Task> getTasks(){
-        return tr.getTasks();
+        return tr.findAll();
     }
 }

@@ -1,20 +1,29 @@
 package com.example.taskManagement.Model;
 
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "users")
 public class User {
 
-    private  int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  long id;
+    @Column(unique = true , nullable = false)
     private  String name;
 
     public User(){};
 
-    public User(int id , String name){
+    public User(long id , String name){
         this.id = id;
         this.name = name;
     }
+    public long getId(){
+        return id;
+    }
 
-    public int  getId(){
-        return this.id;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {
