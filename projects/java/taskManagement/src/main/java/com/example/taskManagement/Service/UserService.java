@@ -30,7 +30,10 @@ public class UserService {
     };
 
     public User getUser(long id){
-        return ur.getReferenceById(id);
+
+        return ur.findById(id)
+                .orElseThrow(() ->
+                        new InvalidUserException("User not found with id: " + id));
     }
 
     public List<User> getAllUsers(){

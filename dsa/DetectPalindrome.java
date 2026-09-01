@@ -8,7 +8,7 @@ public static void main(String[]args){
     String str = scanner.next();
     System.out.println(str);
 
-
+    // can able to figure it out
 
 }
 

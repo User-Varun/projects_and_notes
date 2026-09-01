@@ -1,3 +1,7 @@
 # because it's already hosted on github
 projects/js_ts/bizflow
 projects/java/vault-web
+
+// remove nonsense files from DSA
+dsa/*.class
+dsa/.idea

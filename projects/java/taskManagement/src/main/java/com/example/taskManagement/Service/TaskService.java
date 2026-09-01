@@ -3,6 +3,7 @@ package com.example.taskManagement.Service;
 import com.example.taskManagement.Model.Task;
 import com.example.taskManagement.Repository.TaskRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class TaskService {
 
     @Transactional
     public Task getTask(long id){
-        return tr.getReferenceById(id);
+        return tr.findById(id).orElseThrow(() -> new HttpMessageNotWritableException("id: " + id));
     }
 
     @Transactional
