@@ -1,5 +1,6 @@
 package com.example.taskManagement.Model;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,38 +10,47 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id;
+
+    @Column(nullable = false)
     private  String title;
+
+    @Column(nullable = false)
     private  String description;
-    private int projectId;
-    private int userId;
+
+    @Column(nullable = false)
+    private long userId;
 
     public Task(){}
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public int getProjectId() {
-        return projectId;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public int getUserId() {
+    public long getUserId() {
         return userId;
     }
 
-    public Task(String t , String d , int projectId , int userId){
-
-        this.title = t;
-        this.description = d;
+    public void setUserId(long userId) {
         this.userId = userId;
-        this.projectId = projectId;
     }
-public long getId(){
-        return id;
-}
-
 }

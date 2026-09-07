@@ -5,3 +5,4 @@ projects/java/vault-web
 // remove nonsense files from DSA
 dsa/*.class
 dsa/.idea
+/.idea

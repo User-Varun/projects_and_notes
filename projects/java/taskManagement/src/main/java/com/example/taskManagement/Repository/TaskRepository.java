@@ -9,4 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public interface TaskRepository extends JpaRepository<Task , Long> { }
+public interface TaskRepository extends JpaRepository<Task , Long> {
+    List<Task> findAllByUserId(Long userId);
+}
