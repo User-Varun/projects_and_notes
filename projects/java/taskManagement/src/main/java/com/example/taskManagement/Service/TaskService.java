@@ -1,5 +1,7 @@
 package com.example.taskManagement.Service;
 
+import com.example.taskManagement.Exceptions.InvalidArgumentException;
+import com.example.taskManagement.Exceptions.ResourceNotFoundException;
 import com.example.taskManagement.Model.Task;
 import com.example.taskManagement.Model.User;
 import com.example.taskManagement.Repository.TaskRepository;
@@ -22,7 +24,7 @@ public class TaskService {
     @Transactional
     public Task addTask(String title , String description , Long userId){
 
-        if(title == null || description == null || userId == null) throw new RuntimeException("Invalid given details!");
+        if(title == null || description == null || userId == null ) throw new InvalidArgumentException("title, description, and userId are required");
 
         Task t = new Task();
 
@@ -35,7 +37,7 @@ public class TaskService {
 
 
     public Task getTask(long id){
-        return tr.findById(id).orElseThrow(() -> new HttpMessageNotWritableException("id: " + id));
+        return tr.findById(id).orElseThrow(() -> new ResourceNotFoundException("Can't find task with id: " + id));
     }
 
     public List<Task> getAllTasks(Long userId){
