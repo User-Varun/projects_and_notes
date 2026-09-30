@@ -1,8 +1,12 @@
 # because it's already hosted on github
 projects/js_ts/bizflow
 projects/java/vault-web
+projects/java/link_shortner
 
 // remove nonsense files from DSA
 dsa/*.class
 dsa/.idea
 /.idea
+
+// the code is not mine (kept there for experimentation)
+projects/gamedev/Quake
