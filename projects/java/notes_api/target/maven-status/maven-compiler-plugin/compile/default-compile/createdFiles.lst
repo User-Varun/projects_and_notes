@@ -1,0 +1,6 @@
+com\example\notes_api\Model\User.class
+com\example\notes_api\Controller\AuthController.class
+com\example\notes_api\Dto\UserRequest.class
+com\example\notes_api\Repository\AuthRepository.class
+com\example\notes_api\Service\AuthService.class
+com\example\notes_api\Security\JwtService.class

@@ -1,0 +1,44 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+25
+-sourcepath
+'C:/projects/java/snakeGame/src/main/java;C:/projects/java/snakeGame/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/projects/java/snakeGame/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'snakeGame 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'snakeGame 1.0-SNAPSHOT API'
+com.varun.snakegame
+C:\projects\java\snakeGame\src\main\java = 1786426475201
+C:\projects\java\snakeGame\target\generated-sources\annotations = 1786431157704
+C:\projects\java\snakeGame\target\reports\apidocs\allclasses-index.html = 1786431309877
+C:\projects\java\snakeGame\target\reports\apidocs\allpackages-index.html = 1786431309880
+C:\projects\java\snakeGame\target\reports\apidocs\element-list = 1786431309795
+C:\projects\java\snakeGame\target\reports\apidocs\help-doc.html = 1786431309908
+C:\projects\java\snakeGame\target\reports\apidocs\index-all.html = 1786431309896
+C:\projects\java\snakeGame\target\reports\apidocs\index.html = 1786431309902
+C:\projects\java\snakeGame\target\reports\apidocs\member-search-index.js = 1786431309887
+C:\projects\java\snakeGame\target\reports\apidocs\module-search-index.js = 1786431309882
+C:\projects\java\snakeGame\target\reports\apidocs\overview-tree.html = 1786431309865
+C:\projects\java\snakeGame\target\reports\apidocs\package-search-index.js = 1786431309884
+C:\projects\java\snakeGame\target\reports\apidocs\search.html = 1786431309899
+C:\projects\java\snakeGame\target\reports\apidocs\serialized-form.html = 1786431309848
+C:\projects\java\snakeGame\target\reports\apidocs\tag-search-index.js = 1786431309889
+C:\projects\java\snakeGame\target\reports\apidocs\type-search-index.js = 1786431309886

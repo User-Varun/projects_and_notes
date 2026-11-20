@@ -4,25 +4,360 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531f09cd-0c35-434d-8bb1-5d0772e0d107" name="Changes" comment="worked on rest api and error handling">
-      <change afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/InvalidUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Controller/ProjectController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/ProjectRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/ProjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/TaskManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/TaskManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/taskManagement/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="531f09cd-0c35-434d-8bb1-5d0772e0d107" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/LinearSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Searching/Searching.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/Sorting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/SortingAlgorithms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/Sorting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/Sorting/out/production/Sorting/SortingAlgorithms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/output/BubbleSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/problem solving patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsa/problem solving patterns/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/docs/Dev Note.excalidraw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/docs/Hyperlocal Dark Store Fulfillment Flowchart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/docs/Notes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/docs/usecaseDiagramMajorProject.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/dto/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/model/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/auth/service/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/dto/ApiErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/CartNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/DuplicateEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/InvalidQuantityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/common/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/dto/AddToCartRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/model/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/model/CustomerAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/model/CustomerCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/model/CustomerProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/repository/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/repository/CustomerCartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/customer/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/darkstore/DarkStoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/darkstore/DarkStoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/darkstore/DarkStoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/darkstore/dto/AddDarkStoreRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/darkstore/model/DarkStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/inventory/DarkStoreInventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/inventory/DarkStoreInventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/inventory/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/inventory/dto/AddProductToInventoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/inventory/model/DarkStoreInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/product/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/product/dto/AddProductToSystemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/user/enums/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/python/Neural_Networks_From_Scratch/projects/python/Neural_Networks_From_Scratch/lesson01_neuron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/python/Neural_Networks_From_Scratch/projects/python/Neural_Networks_From_Scratch/lesson02_dot_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/python/Neural_Networks_From_Scratch/projects/python/Neural_Networks_From_Scratch/lesson03_activation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/python/Neural_Networks_From_Scratch/projects/python/Neural_Networks_From_Scratch/lesson04_sigmoid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playstation_uses_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Playstation_uses_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/college/bizflow-reports-5th-sem/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/college/bizflow-reports-5th-sem/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/dsa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/dsa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/Bitwise_operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/Bitwise_operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/DetectPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/DetectPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/TwoSumArray/AnotherBetterApproach.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/TwoSumArray/AnotherBetterApproach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/TwoSumArray/BetterApproach.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/TwoSumArray/BetterApproach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/TwoSumArray/BruteForceApproach.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/TwoSumArray/BruteForceApproach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/TwoSumArray/problemStatement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/TwoSumArray/problemStatement.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa/something.java" beforeDir="false" afterPath="$PROJECT_DIR$/dsa/something.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Circle.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Circle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Color.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Color.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Fill.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Fill.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/FrameBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/FrameBuffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Line.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Point.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/include/Graphics/Point.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Circle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Circle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Fill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Fill.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/FrameBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/FrameBuffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Line.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/Graphics/Line.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main-2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main-2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main-3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main-3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/projects/gamedev/GraphicsFromScratch/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/src/main/java/com/varun/practicingwritinginjava/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/src/main/java/com/varun/practicingwritinginjava/Parent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/src/main/java/com/varun/practicingwritinginjava/PracticingWritingInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/classes/com/varun/practicingwritinginjava/BankAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/classes/com/varun/practicingwritinginjava/Parent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/classes/com/varun/practicingwritinginjava/PracticingWritingInJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/PracticingWritingInJava/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/employee_management/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/myfirstPackage/first.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/myfirstPackage/secondPackage/second.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/shape_system/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/Armstrong.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/NumReversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/Palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/single file programs/primeNoCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/smartBankingSystem/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/smartBankingSystem/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/smartBankingSystem/accounts/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/taskManagementSystem/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/taskManagementSystem/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/programs/taskManagementSystem/TaskManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/src/main/java/com/varun/snakegame/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/src/main/java/com/varun/snakegame/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/Parent.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/Parent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/classes/com/varun/snakegame/SnakeGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/classes/com/varun/snakegame/SnakeGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-javadoc-plugin-stale-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/com/varun/snakegame/SnakeGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/com/varun/snakegame/SnakeGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/com/varun/snakegame/class-use/SnakeGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/com/varun/snakegame/class-use/SnakeGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/com/varun/snakegame/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/com/varun/snakegame/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/com/varun/snakegame/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/com/varun/snakegame/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/com/varun/snakegame/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/com/varun/snakegame/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/dejavufonts.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/dejavufonts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/jquery.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/jquery.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/legal/jqueryUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/legal/jqueryUI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/module-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/module-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/copy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/glass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/glass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/resource-files/x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/resource-files/x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/script-files/jquery-3.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/script-files/jquery-3.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/script-files/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/script-files/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/script-files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/script-files/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/script-files/search-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/script-files/search-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/script-files/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/script-files/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/tag-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/tag-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/reports/apidocs/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/reports/apidocs/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/snakeGame-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/snakeGame-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/snakeGame-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/snakeGame-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/snakeGame/target/snakeGame-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/2d_snake_game/target/snakeGame-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/model/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/proxies/CommentNotificationProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/proxies/EmailCommentNotificationProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/repository/CommentRespository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/repository/DBCommentRespository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/src/main/java/com/varun/services/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/ProjectConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/proxies/CommentNotificationProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/proxies/EmailCommentNotificationProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/repository/CommentRespository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/repository/DBCommentRespository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch4-ex1/target/classes/com/varun/services/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/src/main/java/com/example/ch7_ex1/Ch7Ex1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/src/main/java/com/example/ch7_ex1/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/src/main/resources/static/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch7-ex1/src/test/java/com/example/ch7_ex1/Ch7Ex1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/test/java/com/quickcommerce/engine/QuickCommerceEngineApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/src/main/java/com/example/ch8_ex1/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex1/src/test/java/com/example/ch8_ex1/Ch8Ex1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/java/com/example/ch8_ex2/Ch8Ex2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/quick_commerce_engine/src/main/java/com/quickcommerce/engine/QuickCommerceEngineApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/java/com/example/ch8_ex2/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/java/com/example/ch8_ex2/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/java/com/example/ch8_ex2/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-ex2/src/main/resources/templates/products.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/Ch8PracticeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/LoginProcesser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/java/com/varun/ch8_practice/services/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/main/resources/templates/students.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/ch8-practice/src/test/java/com/varun/ch8_practice/Ch8PracticeApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/src/main/java/com/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/src/main/java/com/example/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/src/main/java/com/example/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/src/main/java/com/example/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/classes/com/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/classes/com/example/Parrot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/classes/com/example/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/classes/com/example/ProjectConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/dependency_injection-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/dependency_injection/what i learned.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/src/main/java/com/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/src/main/java/com/example/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/src/main/java/com/example/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/src/test/java/com/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/classes/com/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/classes/com/example/Parrot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/classes/com/example/ProjectConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/first_project-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/surefire-reports/TEST-com.example.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/surefire-reports/com.example.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/first_project/target/test-classes/com/example/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/src/main/java/com/example/rest_example/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/src/main/java/com/example/rest_example/RestExampleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/rest-example/src/test/java/com/example/rest_example/RestExampleApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/src/main/java/com/varun/Config/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/src/main/java/com/varun/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/src/main/java/com/varun/Parrot/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/classes/com/varun/Config/ProjectConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/classes/com/varun/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/classes/com/varun/Parrot/Parrot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/spring_starts_here_book/second_project/target/second_project-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Dto/AddTaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Dto/AddTaskRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Dto/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Dto/TokenResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Exceptions/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Exceptions/ApiExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Exceptions/DuplicateResourceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Exceptions/DuplicateResourceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Exceptions/InvalidArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Exceptions/InvalidArgumentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Exceptions/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Security/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Security/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/java/com/example/taskManagement/TaskManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/java/com/example/taskManagement/TaskManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/java/taskManagement/src/test/java/com/example/taskManagement/TaskManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/java/task_management_api/src/test/java/com/example/taskManagement/TaskManagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system-design/desgin-patterns/creational/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/system-design/desgin-patterns/creational/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_software_stack_of_computers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/the_software_stack_of_computers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/world_of_windows_and_unix_like_systems.txt" beforeDir="false" afterPath="$PROJECT_DIR$/world_of_windows_and_unix_like_systems.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,49 +367,107 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "User-Varun"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;User-Varun&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/User-Varun/projects_and_notes.git",
-    "accountId": "10b38590-900e-4b93-850d-d79f78866a5d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/User-Varun/projects_and_notes.git&quot;,
+    &quot;accountId&quot;: &quot;10b38590-900e-4b93-850d-d79f78866a5d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="2.0174718654389584E-48" />
+      <entry key="MS500" value="2.90819056085586E-10" />
+      <entry key="S2" value="0.005410721464747906" />
+      <entry key="S5" value="0.2199597896749796" />
+      <entry key="S10" value="0.8808095534279328" />
+      <entry key="S30" value="2.577945403942198" />
+      <entry key="S60" value="4.839248348210562" />
+      <entry key="M2" value="11.599342190525228" />
+      <entry key="M5" value="40.84245542004442" />
+      <entry key="M10" value="77.12784712442932" />
+      <entry key="M15" value="98.1210640560937" />
+      <entry key="M30" value="127.55150834255608" />
+      <entry key="H1" value="147.39996757671344" />
+      <entry key="H2" value="159.30316802004026" />
+      <entry key="H4" value="165.89817425352715" />
+      <entry key="D1" value="171.77826200552326" />
+      <entry key="W1" value="172.82449175360327" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0001234316504946" />
+      <entry key="S2" value="1.105403888781264" />
+      <entry key="S5" value="1.4065768563966556" />
+      <entry key="S10" value="1.6376337949049184" />
+      <entry key="S30" value="1.8609966327715188" />
+      <entry key="S60" value="1.9530003713380077" />
+      <entry key="M2" value="2.2528980893495154" />
+      <entry key="M5" value="3.5955738607240337" />
+      <entry key="M10" value="5.04431572443674" />
+      <entry key="M15" value="5.802604308939122" />
+      <entry key="M30" value="6.767551855413926" />
+      <entry key="H1" value="7.345862341154078" />
+      <entry key="H2" value="7.662824949950624" />
+      <entry key="H4" value="7.828802714847104" />
+      <entry key="D1" value="7.9710973584495886" />
+      <entry key="W1" value="7.995861899127126" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0010180329695714074" />
+      <entry key="MS500" value="0.25208811508741275" />
+      <entry key="S2" value="0.7184400683993999" />
+      <entry key="S5" value="1.1717513326011022" />
+      <entry key="S10" value="2.0566393695281775" />
+      <entry key="S30" value="4.151375746092645" />
+      <entry key="S60" value="6.619011674012286" />
+      <entry key="M2" value="13.752568057800127" />
+      <entry key="M5" value="44.38754548251491" />
+      <entry key="M10" value="82.14181198131229" />
+      <entry key="M15" value="103.9016237861736" />
+      <entry key="M30" value="134.30683151842092" />
+      <entry key="H1" value="154.73932544267353" />
+      <entry key="H2" value="166.96262644726204" />
+      <entry key="H4" value="173.72526243196754" />
+      <entry key="D1" value="179.74906899587543" />
+      <entry key="W1" value="180.8203120548197" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3ISJ9CZPZ9kx9hnmovAjEgjIASo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-ac68fc9d2b05-intellij.indexing.shared.core-IU-263.7307.200" />
       </set>
     </attachedChunks>
   </component>
