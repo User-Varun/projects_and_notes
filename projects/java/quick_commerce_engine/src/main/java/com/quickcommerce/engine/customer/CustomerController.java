@@ -1,47 +1,50 @@
 package com.quickcommerce.engine.customer;
 
 import com.quickcommerce.engine.auth.service.CustomUserDetails;
-import com.quickcommerce.engine.auth.service.MyUserDetailsService;
+import com.quickcommerce.engine.common.exceptions.DarkstoreNotFoundException;
+import com.quickcommerce.engine.common.exceptions.InventoryItemNotFoundException;
 import com.quickcommerce.engine.customer.dto.AddToCartRequest;
+import com.quickcommerce.engine.customer.dto.PopulateHomePageResponse;
+import com.quickcommerce.engine.darkstore.DarkStoreService;
+import com.quickcommerce.engine.customer.dto.GetNearestStoreRequest;
+import com.quickcommerce.engine.darkstore.model.DarkStore;
+import com.quickcommerce.engine.inventory.DarkStoreInventoryRepository;
+import com.quickcommerce.engine.inventory.DarkStoreInventoryService;
+import com.quickcommerce.engine.inventory.model.InventoryItem;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/customer")
 public class CustomerController {
 
-    private  CustomerService customerService;
-    /**
-     * 1.A customer can browse products.(dark-store will be assgined once the user places product into cart ( lock refreshes every 10 min for items in the cart)
-     * 2.Add product to cart
-     * 3.place order
-     * 4.track order
-     * 
-     *
-     *
-     *
-     */
-
+    private  final CustomerService customerService;
+    private final DarkStoreService darkStoreService;
+    private final DarkStoreInventoryRepository darkStoreInventoryRepository;
 
     /**
-     * Gets Product into 10 items with pagination and different page for home
+     * Methods
+     * 1. show the customer the products from the nearest store ( populate the home page )
+     * 2. manage add to cart
+     * 3. handle order placed
+     * 4. track order using events ( web-sockets )
+     * 5. search products ( fast search )
      */
-    @GetMapping
-    public void getProducts(){}
 
-    @PostMapping
-    public ResponseEntity<String> addProductToCart(@AuthenticationPrincipal CustomUserDetails user, @Valid @RequestBody AddToCartRequest request){
-
-        // customer adds product to the cart , show the updated cart
-        customerService.addProductToCart(user.getId(), request);
-
-        return ResponseEntity.ok().body("product added successfully!");
+    @PostMapping("/add-to-cart")
+    public ResponseEntity<String> addToCart(@Valid @RequestBody AddToCartRequest req, @AuthenticationPrincipal CustomUserDetails userDetails){
+        customerService.addProductToCart(userDetails.getId() , req);
+        return ResponseEntity.ok().body("product added to cart successfully");
     }
 
-    
+    public void addAddress(){
+
+    }
+
 }

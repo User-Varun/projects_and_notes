@@ -21,7 +21,7 @@ public class JwtUtil {
     private final long EXPIRATION_TIME = 1000 * 60 * 15;
 
     public JwtUtil(@Value("${jwt.secret}")  String secret , @Value("${jwt.refreshSecret}")  String refreshToken) {
-        this.SECRET_KEY = Keys.hmacShaKeyFor(refreshToken.getBytes());
+        this.SECRET_KEY = Keys.hmacShaKeyFor(secret.getBytes());
         this.REFRESH_KEY = Keys.hmacShaKeyFor(refreshToken.getBytes());
 
     }
@@ -35,6 +35,23 @@ public class JwtUtil {
                     .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                     .signWith(SECRET_KEY)
                     .compact();
+    }
+
+    public String extractEmail(String token){
+        return Jwts.parserBuilder()
+                .setSigningKey(SECRET_KEY) // set key to verify token
+                .build()
+                .parseClaimsJws(token)// parse and validate token
+                .getBody()
+                .getSubject(); // return subject (email)
+    }
+
+    public Claims parseAccessToken(String token) {
+        return Jwts.parserBuilder()
+                .setSigningKey(SECRET_KEY)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 
 

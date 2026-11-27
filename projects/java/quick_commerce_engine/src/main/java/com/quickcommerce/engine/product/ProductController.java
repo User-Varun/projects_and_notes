@@ -1,36 +1,26 @@
 package com.quickcommerce.engine.product;
 
 import com.quickcommerce.engine.product.dto.AddProductToSystemRequest;
+import com.quickcommerce.engine.product.dto.AddProductToSystemResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-
-/**
- * Responsibilites
- *
- * <p>
- *
- * 1. CRUD Product
- * </p>
- */
-@RestController
+@Controller
+@RequestMapping("/api/products")
 @RequiredArgsConstructor
-@RequestMapping("/api/product")
 public class ProductController {
 
-    private ProductService productService;
+    private final ProductService productService;
 
-    /**
-     * Adds the Product to the system, this later used for adding products to dark-store specific inventories.
-     * @param request
-     * @return ResponseEntity
-     */
-    @PostMapping
-    public ResponseEntity<String> addProduct(@Valid @RequestBody AddProductToSystemRequest request){
-        productService.addProduct(request);
-        return ResponseEntity.ok().body("Product added in the system successfully!");
+    @PostMapping()
+    public ResponseEntity<AddProductToSystemResponse> addProductToSystem(@Valid @RequestBody AddProductToSystemRequest req){
+        AddProductToSystemResponse res  = productService.addProduct(req);
+        return ResponseEntity.ok().body(res);
     }
-
 }

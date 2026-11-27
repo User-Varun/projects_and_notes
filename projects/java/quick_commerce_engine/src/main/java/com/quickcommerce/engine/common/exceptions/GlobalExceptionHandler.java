@@ -40,4 +40,23 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ApiErrorResponse> handleCartNotFound(CartNotFoundException ex){
         return error(HttpStatus.NOT_FOUND , "NOT_FOUND" , "cart not found for the customer "+ex.getMessage());
     }
+
+    @ExceptionHandler(DarkstoreNotFoundException.class)
+    public ResponseEntity<ApiErrorResponse> handleDarkstoreNotFound(DarkstoreNotFoundException ex){
+        return error(HttpStatus.NOT_FOUND , "NOT_FOUND" , "Darkstore not found  "+ex.getMessage());
+    }
+
+
+    @ExceptionHandler(InventoryItemNotFoundException.class)
+    public ResponseEntity<ApiErrorResponse> handleInventoryItemNotFound(InventoryItemNotFoundException ex){
+        return error(HttpStatus.NOT_FOUND , "NOT_FOUND" , "No items found in the darkstore "+ex.getMessage());
+    }
+
+
+    @ExceptionHandler(JwtAuthException.class)
+    public ResponseEntity<ApiErrorResponse> handleJwtAuthException(JwtAuthException ex){
+        return error(HttpStatus.NOT_FOUND , "NOT_FOUND" , ex.getMessage());
+    }
+
+
 }

@@ -14,9 +14,9 @@ public class CustomerAddress {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private BigDecimal longitude;
+    private double longitude;
 
-    private BigDecimal latitude;
+    private double latitude;
 
 
 

@@ -9,10 +9,10 @@ import lombok.Data;
 public class AddProductToInventoryRequest {
 
     @NotNull
-    private DarkStore darkStoreId;
+    private long darkStoreId;
 
     @NotNull
-    private Product productId;
+    private long productId;
 
     @NotNull
     private Integer onHandQuantity;

@@ -7,25 +7,21 @@ import lombok.Data;
 
 @Entity
 @Data
-public class DarkStoreInventory {
+public class InventoryItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
 
-    @ManyToOne
-    @JoinColumn(name = "dark_store_id", nullable = false)
-    private DarkStore darkStoreId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private DarkStore darkStore;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id" , nullable = false)
-    private Product productId;   // will lazy load this later
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Product product;
 
-    @Column(name = "on_hand_quantity" , nullable = false)
     private Integer onHandQuantity;
 
-    @Column(name = "reserved_quantity" , nullable = false)
     private Integer reservedQuantity;
 
     // something to related with @Version

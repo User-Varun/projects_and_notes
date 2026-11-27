@@ -2,6 +2,7 @@ package com.quickcommerce.engine.product;
 
 
 import com.quickcommerce.engine.product.dto.AddProductToSystemRequest;
+import com.quickcommerce.engine.product.dto.AddProductToSystemResponse;
 import com.quickcommerce.engine.product.model.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,9 +11,9 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ProductService {
 
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
 
-    public void addProduct(AddProductToSystemRequest request){
+    public AddProductToSystemResponse addProduct(AddProductToSystemRequest request){
         Product darkStoreProduct = new Product();
 
         darkStoreProduct.setName(request.getName());
@@ -20,6 +21,8 @@ public class ProductService {
         darkStoreProduct.setCategory(request.getCategory());
         darkStoreProduct.setActive(true);
 
-        productRepository.save(darkStoreProduct);
+        Product saved = productRepository.save(darkStoreProduct);
+
+        return new AddProductToSystemResponse(saved.getId());
     }
 }

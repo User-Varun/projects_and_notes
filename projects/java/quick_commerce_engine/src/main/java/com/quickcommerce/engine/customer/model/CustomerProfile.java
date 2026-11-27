@@ -2,16 +2,19 @@ package com.quickcommerce.engine.customer.model;
 
 import com.quickcommerce.engine.user.model.User;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "customer_profiles")
+@Data
 public class CustomerProfile {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     // one to one( one user can have only one customer profile)

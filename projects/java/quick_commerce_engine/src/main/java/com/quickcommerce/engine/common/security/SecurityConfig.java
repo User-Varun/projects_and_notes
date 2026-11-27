@@ -1,4 +1,4 @@
-package com.quickcommerce.engine.common.exceptions.security;
+package com.quickcommerce.engine.common.security;
 
 
 import com.quickcommerce.engine.auth.service.MyUserDetailsService;
@@ -14,6 +14,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -26,6 +27,8 @@ import java.util.List;
 public class SecurityConfig {
 
     private final MyUserDetailsService userDetailsService;
+
+    private final JwtAuthFilter jwtAuthFilter;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -52,7 +55,8 @@ public class SecurityConfig {
                                                 "/api/auth/register")
                                         .permitAll()
                                         .anyRequest()
-                                        .authenticated());
+                                        .authenticated())
+                .addFilterBefore(jwtAuthFilter , UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
 
@@ -64,7 +68,7 @@ public class SecurityConfig {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 
         corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000"));
-        corsConfiguration.setAllowedMethods(List.of("POST"));
+        corsConfiguration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         corsConfiguration.setAllowedHeaders(List.of("Authorization" , "Content-Type"));
         corsConfiguration.setAllowCredentials(true);
 

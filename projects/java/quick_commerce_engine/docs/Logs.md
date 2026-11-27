@@ -1,4 +1,60 @@
-<br></br>
+nov 27 
+- add customer address endpoint 
+- finished the add to cart method
+- next check if add to cart functionality is working or needs more fixing
+
+
+
+nov 25 
+- created JwtAuthFilter that will validate (non public) http requests and validates them (contains jwt token or not and if it's valid )
+- i choose to do auth with email & password , i could also have done using username & password
+- now my requests are authenticating, role based interactions will need to be set (later)
+- adding the product controller so i can add to product to system
+- need to add swagger ui here (so can track of the routes and methods in the app)
+nov 25 (1:23pm)
+- request are now being authenticated
+- product adding to inventory success
+- next is user adding the product to the cart.
+
+
+nov 24
+- made progress in add to cart functionality , check the routes for add a product to customer cart (role base auth rules will add later)
+- in the auth fix the issue of needing to read the access token when it comes from the request. (for requeest to be used, rn giving 403 on every request besides login and register)
+
+
+
+## old 
+- abhi product populate kar liya hai customer ke liye baseed on nearest location
+- ab customer ko add to kart and search aur dena hai phir place order implement karunga
+- then if when needed implement the simulation of packer and delivery
+- and then make auth proper make routes available based on role.
+
+
+
+
+
+# What i'm working on right now 
+- working on customer module (make ordering happen by customer --big goal)
+
+
+# What's currently implemented 
+
+## Auth routes
+   - login , signup are working , refresh needs work
+
+## Customer 
+  - 
+
+
+## rough 
+-- admin will crud the darkstores 
+-- products will be crud by the store admin
+
+A common split is:
+- System admin / catalog admin: Create, update, or deactivate products in the global catalog. They also create and manage dark stores.
+- Store admin / store manager: Manage that store’s inventory—add an existing product to the store,
+
+
 
 # Project Scope
 

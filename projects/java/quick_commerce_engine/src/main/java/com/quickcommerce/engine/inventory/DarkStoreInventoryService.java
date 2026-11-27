@@ -1,7 +1,14 @@
 package com.quickcommerce.engine.inventory;
 
+import com.quickcommerce.engine.common.exceptions.DarkstoreNotFoundException;
+import com.quickcommerce.engine.common.exceptions.ProductNotFoundException;
+import com.quickcommerce.engine.darkstore.DarkStoreRepository;
+import com.quickcommerce.engine.darkstore.model.DarkStore;
 import com.quickcommerce.engine.inventory.dto.AddProductToInventoryRequest;
-import com.quickcommerce.engine.inventory.model.DarkStoreInventory;
+import com.quickcommerce.engine.inventory.dto.AddProductToInventoryResponse;
+import com.quickcommerce.engine.inventory.model.InventoryItem;
+import com.quickcommerce.engine.product.ProductRepository;
+import com.quickcommerce.engine.product.model.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,17 +16,29 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class DarkStoreInventoryService {
 
-    private DarkStoreInventoryRepository darkStoreInventoryRepository;
+    private final DarkStoreInventoryRepository darkStoreInventoryRepository;
+    private final DarkStoreRepository darkStoreRepository;
+    private final ProductRepository productRepository;
 
-    public void addProductToInventory(AddProductToInventoryRequest request){
-        DarkStoreInventory darkStoreInventoryProduct = new DarkStoreInventory();
+    public AddProductToInventoryResponse addProductToInventory(AddProductToInventoryRequest request){
 
-        darkStoreInventoryProduct.setDarkStoreId(request.getDarkStoreId());
-        darkStoreInventoryProduct.setProductId(request.getProductId());
-        darkStoreInventoryProduct.setOnHandQuantity(request.getOnHandQuantity());
-        darkStoreInventoryProduct.setReservedQuantity(0); // initially reserved
+        InventoryItem inventoryItemProduct = new InventoryItem();
 
-        darkStoreInventoryRepository.save(darkStoreInventoryProduct);
+        DarkStore darkStore = darkStoreRepository.findById(request.getDarkStoreId())
+                .orElseThrow(() -> new DarkstoreNotFoundException(String.valueOf(request.getDarkStoreId())));
+
+        Product product = productRepository.findById(request.getProductId())
+                .orElseThrow(() -> new ProductNotFoundException(String.valueOf(request.getProductId())));
+
+
+        inventoryItemProduct.setDarkStore(darkStore);
+        inventoryItemProduct.setProduct(product);
+        inventoryItemProduct.setOnHandQuantity(request.getOnHandQuantity());
+        inventoryItemProduct.setReservedQuantity(0); // initially reserved
+
+        InventoryItem saved = darkStoreInventoryRepository.save(inventoryItemProduct);
+
+        return new AddProductToInventoryResponse(saved.getId()); // id of the inventory item
     }
 
 }
